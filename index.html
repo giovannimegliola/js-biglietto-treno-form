@@ -9,8 +9,36 @@
 </head>
 <body>
 
+  <main>
 
+    <!--form input-->
+    <h1 class="text-center text-uppercase mt-4">calcola il prezzo del tuo biglietto</h1>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <h5 class="mt-4"> Nome e Cognome</h5><input type="text" name="full_name" id="full_name" placeholder="">
+            </div>
+            <div class="col-md-4 mt-4">
+                <h5 class="mt-4">Km da percorrere</h5><input type="text" name="km" id="km" placeholder="">
+            </div>
+            <div class="col-md-4 mt-4">
+                <h5 class="mt-4">Fascia d'età</h5>
+                <select name="age" id="age">
+                    <option value="0">minorenne</option>
+                    <option value="1">maggiorenne</option>
+                    <option value="2">over65</option>
+                </select>
+            </div>
 
+            <!--button genera e annulla-->
+            <div class="col-md-4 mt-4">
+                <button id="submit" type="button" class="btn mt-4 border">Genera</button>
+                <button type="button" class="btn mt-4 border">Annulla</button>
+            </div>
+        </div>
+    </div>
+
+  </main>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
