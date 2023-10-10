@@ -19,18 +19,27 @@ button.addEventListener ('click', function () {
     if(isNaN(km) === false){
 
         
-        if(age >= 18 && age < 65){
+        if(age === 2){
             message += `${(price_ticket.toFixed(2))}€ `;
         }
-        else if(age < 18){
-            message += `${(km * price_u18).toFixed(2)}€  sconto del 20%`;
+        else if(age === 1){
+            message += `${(km * price_u18).toFixed(2)}€  (sconto del 20%)`;
         }
         else{
-            message += `${(km * price_o65).toFixed(2)}€  sconto del 40%`;
+            message += `${(km * price_o65).toFixed(2)}€  (sconto del 40%)`;
         }
     }
     else{ 
         message +='Inserisci dei valori numerici';
     }
+
+    document.getElementById('price_ticket').innerText = message;
+
+  
+    let full_name = document.getElementById('full_name').value;
+    document.getElementById('passenger').innerHTML = `${full_name}`;
+
+    
+    
  
 });
