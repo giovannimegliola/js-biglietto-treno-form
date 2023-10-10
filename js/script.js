@@ -39,7 +39,9 @@ button.addEventListener ('click', function () {
     let full_name = document.getElementById('full_name').value;
     document.getElementById('passenger').innerHTML = `${full_name}`;
 
-    
+    document.getElementById('random_coach').innerHTML = `${Math.floor(Math.random() * 10) + 1}`;
+
+    document.getElementById('random_code').innerHTML = `${Math.floor(Math.random() * 99999) + 1}`;
     
  
 });
